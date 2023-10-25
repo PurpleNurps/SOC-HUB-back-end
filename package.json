@@ -1,0 +1,24 @@
+{
+  "name": "bc15-w8-project-back-end-arrayof13spirits",
+  "version": "1.0.0",
+  "description": "LIST OF RESOURCES:",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "dev": "nodemon -r dotenv/config server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1",
+    "vitest": "^0.34.6"
+  }
+}
