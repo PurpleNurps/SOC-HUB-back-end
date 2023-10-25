@@ -1,4 +1,4 @@
-import { pool } from "../index.js";
+import { pool } from "../../index.js";
 // function to drop tables if they exist
 export async function dropTables() {
   try {

@@ -1,7 +1,7 @@
 import { dropTables } from "./dropTables.js";
-import { seedTables } from "./seedTables.js";
 import { createTables } from "./createTables.js";
+import { seedTables } from "./seedTables.js";
 
-dropTables();
-createTables();
-seedTables();
+await dropTables();
+await createTables();
+await seedTables();

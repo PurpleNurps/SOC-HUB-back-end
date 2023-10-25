@@ -1,4 +1,4 @@
-import { pool } from "../index.js";
+import { pool } from "../../index.js";
 
 export async function createTables() {
   try {

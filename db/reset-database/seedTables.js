@@ -1,4 +1,4 @@
-import { pool } from "../index.js";
+import { pool } from "../../index.js";
 //Create a function that sedds the tables
 export async function seedTables() {
   try {
@@ -24,6 +24,7 @@ export async function seedTables() {
         ('EXTERNAL-RESOURCES','Starting Python','https://www.youtube.com/watch?v=b093aqAZiPU'),
         ('EXTERNAL-RESOURCES','Mindset: Inner Critic','https://www.youtube.com/watch?v=d5aVvM4_zpQ');
         `);
+    console.log(`Resources table has been successfully seeded`);
   } catch (error) {
     console.error(
       "Error seeding tables. Error originated in seedTables.js",
