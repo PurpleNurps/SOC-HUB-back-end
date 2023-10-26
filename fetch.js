@@ -72,15 +72,28 @@ export async function fetchResources() {
 // eg: setJS(){ userInput = inputObject.js }
 
 const jsButton = document.getElementById("js-logoID");
+const frontEndButton = document.getElementById("html-logoID");
 const location1 = document.getElementById("resource1-linkID");
 const location2 = document.getElementById("resource2-linkID");
 const location3 = document.getElementById("resource3-linkID");
 const allLinkImages = document.getElementsByClassName(
   "UPDATE WITH ALL LINK IMAGE CLASS"
 );
-
+// event listener to update the front end with javascript resources
 jsButton.addEventListener("click", async function () {
   setJs();
+  await fetchResources();
+  location1.textContent = data[0].name;
+  location2.textContent = data[1].name;
+  location3.textContent = data[2].name;
+  location1.href = data[0].link;
+  location2.href = data[1].link;
+  location3.href = data[2].link;
+});
+
+// Front end resources event listener
+frontEndButton.addEventListener("click", async function () {
+  setFrontEnd();
   await fetchResources();
   location1.textContent = data[0].name;
   location2.textContent = data[1].name;
