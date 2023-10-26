@@ -5,7 +5,7 @@ import { resources } from "../helper-functions/resources.js";
 export async function createNewResource(req, res) {
   const data = req.body;
   // Declare a variable and await helper function
-  const resource = await resources.createResource(data);
+  const newResource = await resources.createResource(data);
   // Create a response object
-  res.status(201).json({ status: "success", data: resource });
+  res.status(201).json({ status: "success", data: newResource });
 }
