@@ -71,10 +71,10 @@ export async function fetchResources() {
 // to do: list of functions to set each version of userInput to be specific topic
 // eg: setJS(){ userInput = inputObject.js }
 
-const jsButton = document.getElementById("UPDATE WITH JS ID");
-const location1 = document.getElementById("UPDATE WITH LOCATION 1 ID");
-const location2 = document.getElementById("UPDATE WITH LOCATION 2 ID");
-const location3 = document.getElementById("UPDATE WITH LOCATION 3 ID");
+const jsButton = document.getElementById("js-logoID");
+const location1 = document.getElementById("resource1-linkID");
+const location2 = document.getElementById("resource2-linkID");
+const location3 = document.getElementById("resource3-linkID");
 const allLinkImages = document.getElementsByClassName(
   "UPDATE WITH ALL LINK IMAGE CLASS"
 );
@@ -82,10 +82,10 @@ const allLinkImages = document.getElementsByClassName(
 jsButton.addEventListener("click", async function () {
   setJs();
   await fetchResources();
-  "UPDATE WITH LINK LOCATION 1 ID".textContent = data[0].name;
-  "UPDATE WITH LINK LOCATION 2 ID".textContent = data[1].name;
-  "UPDATE WITH LINK LOCATION 3 ID".textContent = data[2].name;
-  "UPDATE WITH LINK LOCATION 1 ID".href = data[0].link;
-  "UPDATE WITH LINK LOCATION 2 ID".href = data[1].link;
-  "UPDATE WITH LINK LOCATION 3 ID".href = data[2].link;
+  location1.textContent = data[0].name;
+  location2.textContent = data[1].name;
+  location3.textContent = data[2].name;
+  location1.href = data[0].link;
+  location2.href = data[1].link;
+  location3.href = data[2].link;
 });
