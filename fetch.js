@@ -1,6 +1,15 @@
 const PORT = process.env.PORT || 5555;
 const userInput = "";
 
+export const inputObject = {
+  js: "JAVASCRIPT",
+  frontEnd: "FRONT-END",
+  backEnd: "BACK-END",
+  testing: "TESTING",
+  db: "DATABASES",
+  er: "EXTERNAL-RESOURCES",
+};
+
 export async function fetchResources() {
   // Make a HTTP GET request with the fetch method
   // HTTP METHOD: GET
