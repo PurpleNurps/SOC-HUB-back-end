@@ -41,10 +41,10 @@ export async function fetchResources() {
 }
 
 // change userInput to let
-// const jsbutton = document.getElementById("js icon");
+// const jsbutton = document.getElementById("js icon"); do this for each icon
 // jsbutton.addEventListener("click", function to set userInput to inputObject.js){
 // topic1Location.textContent = javascript topic 1
-// }
+// }; do this for each icon
 
 // to do: list of functions to set each version of userInput to be specific topic
 // eg: setJS(){ userInput = inputObject.js }
