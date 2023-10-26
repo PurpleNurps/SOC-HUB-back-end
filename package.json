@@ -18,6 +18,8 @@
     "pg": "^8.11.3"
   },
   "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^20.8.9",
     "dotenv": "^16.3.1",
     "morgan": "^1.10.0",
     "nodemon": "^3.0.1",
