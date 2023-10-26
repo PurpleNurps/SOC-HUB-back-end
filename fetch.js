@@ -1,5 +1,5 @@
 const PORT = process.env.PORT || 5555;
-const userInput = "";
+let userInput = "";
 
 export const inputObject = {
   js: "JAVASCRIPT",
@@ -9,6 +9,28 @@ export const inputObject = {
   db: "DATABASES",
   er: "EXTERNAL-RESOURCES",
 };
+
+function setJs() {
+  userInput = inputObject.js;
+}
+
+function setFrontEnd() {
+  userInput = inputObject.frontEnd;
+}
+
+function setBackEnd() {
+  userInput = inputObject.backEnd;
+}
+
+function setTesting() {
+  userInput = inputObject.testing;
+}
+function setDb() {
+  userInput = inputObject.db;
+}
+function setEr() {
+  userInput = inputObject.er;
+}
 
 export async function fetchResources() {
   // Make a HTTP GET request with the fetch method
@@ -38,9 +60,9 @@ export async function fetchResources() {
 
   // Log out our parsed data
   console.log(typeof data, data);
+  return data;
 }
 
-// change userInput to let
 // const jsbutton = document.getElementById("js icon"); do this for each icon
 // jsbutton.addEventListener("click", function to set userInput to inputObject.js){
 // topic1Location.textContent = javascript topic 1
@@ -48,3 +70,22 @@ export async function fetchResources() {
 
 // to do: list of functions to set each version of userInput to be specific topic
 // eg: setJS(){ userInput = inputObject.js }
+
+const jsButton = document.getElementById("UPDATE WITH JS ID");
+const location1 = document.getElementById("UPDATE WITH LOCATION 1 ID");
+const location2 = document.getElementById("UPDATE WITH LOCATION 2 ID");
+const location3 = document.getElementById("UPDATE WITH LOCATION 3 ID");
+const allLinkImages = document.getElementsByClassName(
+  "UPDATE WITH ALL LINK IMAGE CLASS"
+);
+
+jsButton.addEventListener("click", async function () {
+  setJs();
+  await fetchResources();
+  "UPDATE WITH LINK LOCATION 1 ID".textContent = data[0].name;
+  "UPDATE WITH LINK LOCATION 2 ID".textContent = data[1].name;
+  "UPDATE WITH LINK LOCATION 3 ID".textContent = data[2].name;
+  "UPDATE WITH LINK LOCATION 1 ID".href = data[0].link;
+  "UPDATE WITH LINK LOCATION 2 ID".href = data[1].link;
+  "UPDATE WITH LINK LOCATION 3 ID".href = data[2].link;
+});
