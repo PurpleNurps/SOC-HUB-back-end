@@ -4,6 +4,8 @@ import morgan from "morgan";
 import { resourcesRoutes } from "./routes/resourcesRoutes.js";
 // Initialize the express app
 const app = express();
+import cors from "cors";
+app.use(cors());
 // Retrieve the port number from environment variables
 const PORT = process.env.PORT;
 
