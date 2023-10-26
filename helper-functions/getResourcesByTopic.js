@@ -2,13 +2,13 @@
 import { pool } from "../index.js";
 
 // get resources by topic
-export async function getResourceByTopic(topic) {
+export async function getResourcesByTopic(topic) {
   // query the db to return the specific topics
   try {
     // define SQL query
-    const queryResource = "SELECT * FROM resources WHERE topic = $1";
+    const queryResources = "SELECT * FROM resources WHERE topic = $1";
     // use pool object to send query to db, preventing SQL injection
-    const result = await pool.query(queryResource, [topic]);
+    const result = await pool.query(queryResources, [topic]);
     // rows property should contain queried data
     return result.rows;
   } catch (error) {

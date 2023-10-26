@@ -1,9 +1,9 @@
 import { getAllResources } from "./getAllResources.js";
 import { createResource } from "./createResource.js";
-import { getResourceByTopic } from "./getResourceByTopic.js";
+import { getResourcesByTopic } from "./getResourcesByTopic.js";
 
 export const resources = {
   getAllResources,
   createResource,
-  getResourceByTopic,
+  getResourcesByTopic,
 };
