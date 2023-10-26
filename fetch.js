@@ -40,7 +40,7 @@ export async function fetchResources() {
   console.log(typeof data, data);
 }
 
-// use userInput be let
+// change userInput to let
 // const jsbutton = document.getElementById("js icon");
 // jsbutton.addEventListener("click", function to set userInput to inputObject.js){
 // topic1Location.textContent = javascript topic 1
