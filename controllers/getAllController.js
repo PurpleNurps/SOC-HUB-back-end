@@ -1,5 +1,6 @@
 // Import functions from resources
 import { resources } from "../helper-functions/resources.js";
+
 // Create function to get all resources
 export async function getAll(req, res) {
   // Declare a variable and await hewlper function
