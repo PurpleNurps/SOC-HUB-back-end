@@ -29,30 +29,3 @@ EXTERNAL-RESOURCES:
 Systematic Thinking = https://socnotes.notion.site/Systematic-Thinking-cece6b637bd148ddbe6c45fef0146708
 Starting Python = https://www.youtube.com/watch?v=b093aqAZiPU
 Mindset: Inner Critic = https://www.youtube.com/watch?v=d5aVvM4_zpQ
-
-IDs:
-back-end-logoID
-js-logoID
-html-logoID
-testing--logoID
-sql--logoID
-gpt-logoID
-
-link IDs:
-resource1-link-logoID
-resource1-linkID
-
-resource2-link-logoID
-resource2-linkID
-
-resource3-link-logoID
-resource3-linkID
-
-Back Button:
-back-buttonID
-
-Add Resource:
-add-resource-buttonID
-
-logo class:
-home--jslogo
